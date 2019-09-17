@@ -3,8 +3,14 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
-
+const counter = () => {
+   let value = 0;
+   return () =>  ++value; // ++value starts counting at 1, where-as value++ would start at 0
+};
+const test = counter();
+console.log( test() );
+console.log( test() );
+console.log( test() );
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
