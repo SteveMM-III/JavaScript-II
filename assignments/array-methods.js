@@ -92,7 +92,7 @@ const bigSpenders = runners.filter( (e) => { return e.donation >= 100; } );
 console.log(bigSpenders);
 
 // Problem 2
-let bigSpenderNames = [];
+const bigSpenderNames = [];
 
 bigSpenders.forEach( (e) => {
    const obj = {
