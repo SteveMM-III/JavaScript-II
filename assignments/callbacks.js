@@ -1,6 +1,6 @@
 // Create a higher order function and invoke the callback function to test your work. You have been provided an example of a problem and a solution to see how this works with our items array.  Study both the problem and the solution to figure out the rest of the problems.
 
-const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum','Pencil', 'Notebook', 'yo-yo', 'Gum','Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 /* 
 
@@ -73,3 +73,14 @@ function removeDuplicates(array, cb) {
   // Do not mutate the original array.
    cb( array.filter( ( ele, index ) => { return array.indexOf(ele) === index; } ) );
 }
+
+/***** testing ***/
+const callback = ( param ) => console.log(param);
+console.log( 'callbacks.js' );
+getLength( items, callback );
+last( items, callback );
+sumNums( 3, 2, callback );
+multiplyNums( 3, 2, callback );
+contains( 'Gum', items, callback );
+removeDuplicates( items, callback );
+

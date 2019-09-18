@@ -1,3 +1,4 @@
+console.log( 'closure.js' );
 // ==== Challenge 1: Write your own closure ====
 // Write a closure of your own creation.
 // Keep it simple! Remember a closure is just a function
